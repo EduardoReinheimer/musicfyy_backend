@@ -66,8 +66,11 @@ MIDDLEWARE = [
     'corsheaders.middleware.CorsPostCsrfMiddleware'
 ]
 
-CORS_ORIGIN_ALLOW_ALL = True
+CORS_ORIGIN_ALLOW_ALL = False
 
+CORS_ORIGIN_WHITELIST = (
+    'https://musicfyy.herokuapp.com/',
+)
 
 ROOT_URLCONF = 'api.urls'
 
@@ -197,6 +200,7 @@ REST_FRAMEWORK = {
 }
 
 from datetime import timedelta
+
 JWT_AUTH = {
     'JWT_ALLOW_REFRESH': True,
     'JWT_EXPIRATION_DELTA': timedelta(hours=1),
