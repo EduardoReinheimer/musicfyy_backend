@@ -66,11 +66,7 @@ MIDDLEWARE = [
     'corsheaders.middleware.CorsPostCsrfMiddleware'
 ]
 
-CORS_ORIGIN_ALLOW_ALL = False
-
-CORS_ORIGIN_WHITELIST = (
-    'https://musicfyy.herokuapp.com/',
-)
+CORS_ORIGIN_ALLOW_ALL = True
 
 ROOT_URLCONF = 'api.urls'
 
