@@ -45,7 +45,7 @@ INSTALLED_APPS = [
     'whitenoise.runserver_nostatic',
     'allauth.account',
     'allauth.socialaccount',
-    'corsheaders'
+    'corsheaders',
 
     'music',
     'users',
