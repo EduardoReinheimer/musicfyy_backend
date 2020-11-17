@@ -69,11 +69,8 @@ MIDDLEWARE_CLASSES = (
     'django.middleware.common.CommonMiddleware',
 )
 
-CORS_ORIGIN_ALLOW_ALL = False
+CORS_ORIGIN_ALLOW_ALL = True
 
-CORS_ORIGIN_WHITELIST = (
-    'https://musicfyy.herokuapp.com',
-)
 
 ROOT_URLCONF = 'api.urls'
 
