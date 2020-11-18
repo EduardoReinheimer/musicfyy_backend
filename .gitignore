@@ -5,7 +5,6 @@
 __pycache__
 *.sqlite3
 media
-media_root/
 
 # Backup files #
 *.bak
